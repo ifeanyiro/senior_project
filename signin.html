@@ -1,0 +1,191 @@
+<html>
+<head>
+  <title>login</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+ <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style = "color:#008080" >Pharmacy  HUB</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signin.html">Login</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+           <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li ><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+             <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quick links<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://www.google.com/search?q=pharmacy+near+me&oq=pharmacy&aqs=chrome.1.69i57j0l5.3096j1j4&sourceid=chrome&es_sm=122&ie=UTF-8#q=pharmacy%20near%20me&rflfq=1&rlha=0&tbm=lcl&tbs=lf:1,lf_ui:3&rlfi=hd:;si:">Pharmacy near me</a></li>
+
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">Suggestions</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header"></li>
+                    
+                  </ul>
+                </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+
+    </nav>
+   </nav>
+
+    <div class="contentBody">
+      </head>
+  <title>SignUP</title>
+  <style type="text/css">
+body { background-color:#F5F5F5;
+  color:008080;
+  }
+  h1 { background-color: #008080;
+     color:#F5F5F5;
+     }
+
+  
+}
+
+  </style>
+    <p>
+
+      <!-- BEGIN # BOOTSNIP INFO -->
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">WELCOME TO THE PHARMACY HUB</h1><br>
+        <p class="text-center"><a href="#" class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Sign In</a></p>
+
+  </div>
+</div>
+<!-- END # BOOTSNIP INFO -->
+
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <img src="download.png" class="img-rounded" alt="download" width="304" height="236">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form" action ="login.php" method="post" >
+                    <div class="modal-body">
+                <div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+                <input id="login_username" class="form-control" type="text" name ="user" placeholder="Username " required>
+                <br>
+                <input id="login_password" class="form-control" type="password" name = "pass" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    
+                                </label>
+                            </div>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+
+                   </div>
+                 
+                </div>
+                    </form>
+                    <div>
+                    <form method="get"  action="signup.html">
+                            
+               </div>
+                      </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+                  <div class="modal-body">
+                <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+                    <div class="modal-body">
+                <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+                <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+      </div>
+    </div>
+  </div>
+    <!-- END # MODAL LOGIN -->
+
+    </p>
+  </div>
+
+
+
+
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

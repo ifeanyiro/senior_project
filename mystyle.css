@@ -1,0 +1,30 @@
+
+	
+header {
+	position: center;
+	padding-top: 180px;
+    
+}
+ body {
+   position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: teal;
+    background-image: url('ss.png');
+    background-position: center;
+    background-size: 500px;
+ }
+
+	div {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+table {
+     padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: teal;
+    color: white;
+
+}
